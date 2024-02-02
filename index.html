@@ -5,14 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Random Locksmith</title>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" href="Assets/padlock.png" type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+		/>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+		</style>
 	</head>
 	<body>
-		<div class="inputBox">
-			<h2>Random Password Generator</h2>
-			<input type="text" id="password" placeholder="Create Password" />
+		<div class="wrapper">
+			<div class="passwordBox">
+				<input type="text" placeholder="Generate Password" disabled />
+				<i class="uil uil-copy copyIcon"></i>
+			</div>
 
-			<button id="button" onclick="getPassword">Generate Password</button>
+			<div class="lengthBox">
+				<input type="range" min="6" max="16" value="8" />
+				<span class="sliderNumber">8</span>
+			</div>
+
+			<button class="generatePassword">Generate Password</button>
 		</div>
 		<script src="main.js"></script>
 	</body>

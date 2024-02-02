@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #800f2f;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 300px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 12px;
+	padding: 30px 25px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .passwordBox {
+	position: relative;
+	height: 50px;
+}
+
+.passwordBox input {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+	padding: 0 45px 0 15px;
+	border: 1px solid #aaa;
+	background-color: transparent;
+}
+
+.passwordBox .copyIcon {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	color: #707070;
+	font-size: 20px;
+	cursor: pointer;
+	transform: translateY(-50%);
+}
+
+.copyIcon:hover {
+	color: #800f2f;
+}
+
+.wrapper .lengthBox {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.lengthBox input {
+	width: 100%;
+	height: 5px;
+	accent-color: #800f2f;
+}
+
+.lengthBox .sliderNumber {
+	min-width: 20px;
+	text-align: right;
+	font-size: 17px;
+	color: #707070;
+}
+
+.wrapper .generatePassword {
+	width: 100%;
+	color: #fff;
+	padding: 12px 0;
+	margin-top: 20px;
+	background: #800f2f;
+	border: none;
+	border-radius: 8px;
+}
+
+.generatePassword:hover {
+	cursor: pointer;
+	background: hsl(343, 79%, 22%);
+}
