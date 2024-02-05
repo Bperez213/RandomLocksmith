@@ -61,6 +61,7 @@ body {
 	width: 100%;
 	height: 5px;
 	accent-color: #800f2f;
+	cursor: pointer;
 }
 
 .lengthBox .sliderNumber {
